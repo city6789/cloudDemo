@@ -1,0 +1,48 @@
+2019-10-22 14:07:04.374  INFO 12432 --- [main] c.z.c.t.t.TestCloudDemoApplication       : No active profile set, falling back to default profiles: default
+2019-10-22 14:07:05.163  INFO 12432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2019-10-22 14:07:05.184  INFO 12432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.
+2019-10-22 14:07:05.475  INFO 12432 --- [main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=86e97277-c3d4-3cc8-ac28-61f82fb6754a
+2019-10-22 14:07:05.590  INFO 12432 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3f10cfd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-22 14:07:05.621  INFO 12432 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$5b2ad2d1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-22 14:07:05.644 ERROR 12432 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.33] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-10-22 14:07:06.440 ERROR 12432 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.33] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-10-22 14:07:06.604  INFO 12432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8888 (http)
+2019-10-22 14:07:06.620 ERROR 12432 --- [main] o.a.catalina.core.AprLifecycleListener   : An incompatible version [1.1.33] of the APR based Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+2019-10-22 14:07:06.632  INFO 12432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-10-22 14:07:06.633  INFO 12432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.26]
+2019-10-22 14:07:06.792  INFO 12432 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/cloud]  : Initializing Spring embedded WebApplicationContext
+2019-10-22 14:07:06.792  INFO 12432 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2408 ms
+2019-10-22 14:07:07.425  INFO 12432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2019-10-22 14:07:07.429  WARN 12432 --- [main] com.zaxxer.hikari.util.DriverDataSource  : Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2019-10-22 14:07:08.331  INFO 12432 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2019-10-22 14:07:08.378  INFO 12432 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-10-22 14:07:08.443  INFO 12432 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.12.Final}
+2019-10-22 14:07:08.445  INFO 12432 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2019-10-22 14:07:08.604  INFO 12432 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2019-10-22 14:07:08.749  INFO 12432 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2019-10-22 14:07:08.949  INFO 12432 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-10-22 14:07:09.170  INFO 12432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-10-22 14:07:09.227  WARN 12432 --- [main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2019-10-22 14:07:11.524  INFO 12432 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-10-22 14:07:11.581  INFO 12432 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-22 14:07:11.720  INFO 12432 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8888 (http) with context path '/cloud'
+2019-10-22 14:07:13.597  INFO 12432 --- [main] o.s.cloud.commons.util.InetUtils         : Cannot determine local hostname
+2019-10-22 14:07:13.598  INFO 12432 --- [main] c.z.c.t.t.TestCloudDemoApplication       : Started TestCloudDemoApplication in 13.672 seconds (JVM running for 14.063)
+2019-10-22 14:08:37.133  INFO 12432 --- [http-nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/cloud]  : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-10-22 14:08:37.134  INFO 12432 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-10-22 14:08:37.144  INFO 12432 --- [http-nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2019-10-22 14:08:37.424  INFO 12432 --- [http-nio-8888-exec-1] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:48.487  INFO 12432 --- [http-nio-8888-exec-3] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:48.693  INFO 12432 --- [http-nio-8888-exec-5] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:48.876  INFO 12432 --- [http-nio-8888-exec-6] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:49.052  INFO 12432 --- [http-nio-8888-exec-8] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:49.237  INFO 12432 --- [http-nio-8888-exec-7] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:49.588  INFO 12432 --- [http-nio-8888-exec-9] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:49.764  INFO 12432 --- [http-nio-8888-exec-10] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:49.924  INFO 12432 --- [http-nio-8888-exec-1] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:50.107  INFO 12432 --- [http-nio-8888-exec-2] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:50.332  INFO 12432 --- [http-nio-8888-exec-3] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:50.486  INFO 12432 --- [http-nio-8888-exec-4] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
+2019-10-22 14:08:50.659  INFO 12432 --- [http-nio-8888-exec-5] c.z.c.t.t.controller.LoginController     : Cloud使用占位符打印的There are now [a,, b,, c,] user accounts: true
