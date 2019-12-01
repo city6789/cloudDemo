@@ -46,7 +46,7 @@ public class CbJobStopListener implements ApplicationListener {
 
 	private void stopJobs() {
 		System.out.println("stopJobs");
-		shutdownAndAwaitTermination(backExecutor.getThreadPoolExecutor());
+		//shutdownAndAwaitTermination(backExecutor.getThreadPoolExecutor());
 	}
 
 	private void shutdownAndAwaitTermination(ExecutorService pool) {

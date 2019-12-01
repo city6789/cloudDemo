@@ -7,6 +7,7 @@ import javax.validation.constraints.NotNull;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
+import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import cn.ztzh.cloud.test.testCloudDemo.listener.ExampleServletContextListener;
@@ -23,6 +24,9 @@ public class TestCloudDemoApplication {
 		System.out.println("@PreDestroy  ###STOPing###");
 		try {
 			Thread.sleep(10 * 1000);
+			
+			
+			
 		} catch (InterruptedException e) {
 			System.out.println(e);
 		}

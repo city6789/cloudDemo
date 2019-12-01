@@ -45,7 +45,7 @@ public class LoginController {
 	  list.add("c,"); 
 	  System.out.println(list);
 	  //AsyncTask task = new AsyncTask();
-	  int a = 20;
+	  int a = 100;
 	  for (int i = 0; i < a; i++) {
 			  //task.tesTask(i);
 		  try {
