@@ -11,6 +11,7 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 import cn.ztzh.cloud.test.testCloudDemo.listener.ExampleServletContextListener;
+import cn.ztzh.cloud.test.testCloudDemo.listener.MyFinalCorrectListener;
 
 @SpringBootApplication
 public class TestCloudDemoApplication {
@@ -65,4 +66,9 @@ public class TestCloudDemoApplication {
 		  }
 		  return lstThreads;
 		}
+	
+	@Bean
+	public MyFinalCorrectListener appApplicationListener(){
+		return new MyFinalCorrectListener();
+	}
 }

@@ -1,10 +1,18 @@
 package cn.ztzh.cloud.test.testCloudDemo.listener;
 
+
+import java.util.Observable;
+import java.util.Observer;
+
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+
+ 
+import java.util.concurrent.Semaphore;
+
 
 public class ExampleServletContextListener implements ServletContextListener{
 	private ApplicationContext context;
@@ -27,4 +35,6 @@ public class ExampleServletContextListener implements ServletContextListener{
 		public void setContext(ApplicationContext context) {
 			this.context = context;
 		}
+		
+		
 }

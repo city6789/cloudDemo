@@ -42,6 +42,15 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 <dependency>
+   <groupId>org.projectlombok</groupId>
+   <artifactId>lombok</artifactId>
+</dependency>        
+<dependency>  
+    <groupId>org.slf4j</groupId>  
+    <artifactId>slf4j-log4j12</artifactId>  
+    <version>1.7.2</version>  
+</dependency>  
+<dependency>
     <groupId>com.alibaba</groupId>
     <artifactId>fastjson</artifactId>
     <version>1.2.32</version>

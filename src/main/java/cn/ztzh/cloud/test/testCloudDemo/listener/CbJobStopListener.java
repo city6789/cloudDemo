@@ -27,7 +27,7 @@ public class CbJobStopListener implements ApplicationListener {
 		// 在spring bean容器销毁之前执行的事件，防止数据库连接池在任务终止前销毁
 		if (event instanceof ContextClosedEvent) {
 			System.out.println("八佰伴   监控到ContextClosedEvent事件 " + DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss"));
-			stopJobs();
+			//stopJobs();
 		}
 
 		if (event instanceof ContextClosedEvent) {
