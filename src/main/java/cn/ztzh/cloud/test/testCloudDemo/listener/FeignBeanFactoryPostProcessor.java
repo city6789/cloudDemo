@@ -27,6 +27,7 @@ public class FeignBeanFactoryPostProcessor implements BeanFactoryPostProcessor{
         if (containsBeanDefinition(beanFactory, "feignContext", "eurekaAutoServiceRegistration")) {
             BeanDefinition bd = beanFactory.getBeanDefinition("feignContext");
             bd.setDependsOn("eurekaAutoServiceRegistration");
+            bd.setDependsOn("applicationcontext ");
         }
     }
 

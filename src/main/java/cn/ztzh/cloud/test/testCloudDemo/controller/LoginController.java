@@ -45,13 +45,14 @@ public class LoginController {
 	  list.add("c,"); 
 	  System.out.println(list);
 	  //AsyncTask task = new AsyncTask();
-	  int a = 100;
+	  int a = 1000;
 	  for (int i = 0; i < a; i++) {
 			  //task.tesTask(i);
 		  try {
+			  log.info("Cloud使用占位符打印的There are now {} user accounts: {},{}", i, list.get(i),list);
 			  helloA.sayHello("aaa"+i);
 		} catch (Exception e) {
-			System.err.println(Thread.currentThread().getName()+"我输出了异常信息InterruptedException,e="+e+e.toString());
+			log.info(Thread.currentThread().getName()+"我输出了异常信息InterruptedException,e="+e+e.toString());
 			e.printStackTrace();
 		}
 	  }

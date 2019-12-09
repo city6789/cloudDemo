@@ -35,7 +35,7 @@ public class TestShutdown {
 	        	//task.searchEverything(name);
 	        	//System.out.println(",ThreadName="+Thread.currentThread().getName());
 	        	//System.out.println("TestShutdown,ThreadName="+Thread.currentThread().getName()+"isInterrupted1="+Thread.currentThread().isInterrupted());
-	        	Thread.sleep(2*1000);
+	        	Thread.sleep(2*10);
 	        	//System.out.println(Thread.currentThread().getName()+"isInterrupted2="+Thread.currentThread().isInterrupted());
 				//System.out.println("2.threadCount===="+threadCount);
 			} catch (InterruptedException e) {
