@@ -24,24 +24,24 @@ public class CbJobStopListener implements ApplicationListener {
 
 	@Override
 	public void onApplicationEvent(ApplicationEvent event) {
-		// 在spring bean容器销毁之前执行的事件，防止数据库连接池在任务终止前销毁
-		if (event instanceof ContextClosedEvent) {
-			System.out.println("八佰伴   监控到ContextClosedEvent事件 " + DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss"));
-			//stopJobs();
-		}
-
-		if (event instanceof ContextClosedEvent) {
-			stopJobs();
-			System.out.println(event.getClass().getSimpleName() + "  1Event has occurred...");
-		} else if (event instanceof ContextRefreshedEvent) {
-			System.out.println(event.getClass().getSimpleName() + "  2Event has occurred...");
-		} else if (event instanceof ContextStartedEvent) {
-			System.out.println(event.getClass().getSimpleName() + "  3Event has occurred...");
-		} else if (event instanceof ContextStoppedEvent) {
-			System.out.println(event.getClass().getSimpleName() + "  4Event has occurred...");
-		} else {
-			System.out.println("5There are other events   " + event.getClass().getName());
-		}
+//		// 在spring bean容器销毁之前执行的事件，防止数据库连接池在任务终止前销毁
+//		if (event instanceof ContextClosedEvent) {
+//			System.out.println("八佰伴   监控到ContextClosedEvent事件 " + DateFormatUtils.format(new Date(), "yyyy-MM-dd HH:mm:ss"));
+//			//stopJobs();
+//		}
+//
+//		if (event instanceof ContextClosedEvent) {
+//			stopJobs();
+//			System.out.println(event.getClass().getSimpleName() + "  1Event has occurred...");
+//		} else if (event instanceof ContextRefreshedEvent) {
+//			System.out.println(event.getClass().getSimpleName() + "  2Event has occurred...");
+//		} else if (event instanceof ContextStartedEvent) {
+//			System.out.println(event.getClass().getSimpleName() + "  3Event has occurred...");
+//		} else if (event instanceof ContextStoppedEvent) {
+//			System.out.println(event.getClass().getSimpleName() + "  4Event has occurred...");
+//		} else {
+//			System.out.println("5There are other events   " + event.getClass().getName());
+//		}
 	}
 
 	private void stopJobs() {

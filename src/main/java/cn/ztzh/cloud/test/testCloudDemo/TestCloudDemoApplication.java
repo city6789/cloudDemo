@@ -7,12 +7,30 @@ import javax.validation.constraints.NotNull;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
-import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.scheduling.annotation.EnableAsync;
 
 import cn.ztzh.cloud.test.testCloudDemo.listener.ExampleServletContextListener;
 import cn.ztzh.cloud.test.testCloudDemo.listener.MyFinalCorrectListener;
 
+
+
+
+
+
+
+
+
+
+
+//@EnableHystrix
+//@EnableDiscoveryClient
+@EnableCaching
+//@EnableFeignClient
+@EnableAsync
+@ComponentScan("cn.ztzh.cloud.*")
 @SpringBootApplication
 public class TestCloudDemoApplication {
 
@@ -26,26 +44,24 @@ public class TestCloudDemoApplication {
 		try {
 			//Thread.sleep(10 * 1000);
 			
-			
-			
 		} catch (Exception e) {
 			System.out.println(e);
 		}
 		ThreadGroup group = Thread.currentThread().getThreadGroup();
-		Thread[] s = findAllThread(group);
-		System.out.println(s);
-    	System.out.println("@PreDestroy  ###STOPThreadState: "+ Thread.currentThread().getState());
-    	System.out.println("@PreDestroy  ###STOPThreadName:  "+ Thread.currentThread().getName());
-    	System.out.println("@PreDestroy  ###STOPThreadId:  "+ Thread.currentThread().getId());
+		Thread[] s = null;//findAllThread(group);
+//		System.out.println(s);
+//    	System.out.println("@PreDestroy  ###STOPThreadState: "+ Thread.currentThread().getState());
+//    	System.out.println("@PreDestroy  ###STOPThreadName:  "+ Thread.currentThread().getName());
+//    	System.out.println("@PreDestroy  ###STOPThreadId:  "+ Thread.currentThread().getId());
 	}
 
-	@NotNull
-	@Bean
-	ServletListenerRegistrationBean<ServletContextListener> myServletListener() {
-		ServletListenerRegistrationBean<ServletContextListener> srb = new ServletListenerRegistrationBean<>();
-		srb.setListener(new ExampleServletContextListener());
-		return srb;
-	}
+//	@NotNull
+//	@Bean
+//	ServletListenerRegistrationBean<ServletContextListener> myServletListener() {
+//		ServletListenerRegistrationBean<ServletContextListener> srb = new ServletListenerRegistrationBean<>();
+//		srb.setListener(new ExampleServletContextListener());
+//		return srb;
+//	}
 	
 	public Thread[] findAllThread(ThreadGroup currentGroup){
 

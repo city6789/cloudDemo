@@ -16,17 +16,17 @@ public class MyTestListener implements ApplicationListener<ApplicationEvent>{
 
 	@Override
 	public void onApplicationEvent(ApplicationEvent event) {
-		System.out.println("333="+event.getClass().getName());
+		//System.out.println("333="+event.getClass().getName());
 		
 	}
 	
 	public void onApplicationEvent(ApplicationContextEvent event) {
-		if (event.getApplicationContext().getParent()==null) {
-			String name = event.getApplicationContext().getApplicationName();
-			System.err.println("name = "+name);
-		}
-			String name = event.getApplicationContext().getApplicationName();
-			System.err.println("name2 = "+name);
+//		if (event.getApplicationContext().getParent()==null) {
+//			String name = event.getApplicationContext().getApplicationName();
+//			System.err.println("name = "+name);
+//		}
+//			String name = event.getApplicationContext().getApplicationName();
+//			System.err.println("name2 = "+name);
 		
 	}
 
