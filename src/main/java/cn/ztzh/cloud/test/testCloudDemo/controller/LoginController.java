@@ -1,7 +1,9 @@
 package cn.ztzh.cloud.test.testCloudDemo.controller;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -58,6 +60,10 @@ public class LoginController {
 	  }
 	  //log.info("{ }",list);
 	  log.info("Cloud使用占位符打印的There are now {} user accounts: {}", list, true);    // faster
+	  
+	  Map map = new HashMap();
+	  map.put("enentType", "firstActivate");
+	  //transEventService.runTrans(map);
 	  return list; 
 	  }
 }

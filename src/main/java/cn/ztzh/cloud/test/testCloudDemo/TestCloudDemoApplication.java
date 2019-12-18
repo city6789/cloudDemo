@@ -17,14 +17,6 @@ import cn.ztzh.cloud.test.testCloudDemo.listener.MyFinalCorrectListener;
 
 
 
-
-
-
-
-
-
-
-
 //@EnableHystrix
 //@EnableDiscoveryClient
 @EnableCaching
