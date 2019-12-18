@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import cn.ztzh.cloud.test.testCloudDemo.inter.TransEventService;
 //import cn.ztzh.cloud.test.testCloudDemo.util.AsyncTask;
 import cn.ztzh.cloud.test.testCloudDemo.util.TestShutdown;
 
@@ -32,6 +33,9 @@ public class LoginController {
 	 */
 
 	@Autowired
+	private TransEventService transEventService;
+	
+	@Autowired
 	private TestShutdown helloA;
 	
 	  @RequestMapping("/hello")
@@ -47,7 +51,7 @@ public class LoginController {
 	  list.add("c,"); 
 	  System.out.println(list);
 	  //AsyncTask task = new AsyncTask();
-	  int a = 1000;
+	  int a = 1;
 	  for (int i = 0; i < a; i++) {
 			  //task.tesTask(i);
 		  try {
@@ -63,7 +67,7 @@ public class LoginController {
 	  
 	  Map map = new HashMap();
 	  map.put("enentType", "firstActivate");
-	  //transEventService.runTrans(map);
+	  transEventService.runTrans(map);
 	  return list; 
 	  }
 }

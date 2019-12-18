@@ -17,10 +17,7 @@ import cn.ztzh.cloud.test.testCloudDemo.listener.MyFinalCorrectListener;
 
 
 
-//@EnableHystrix
-//@EnableDiscoveryClient
 @EnableCaching
-//@EnableFeignClient
 @EnableAsync
 @ComponentScan("cn.ztzh.cloud.*")
 @SpringBootApplication
@@ -30,7 +27,7 @@ public class TestCloudDemoApplication {
 		SpringApplication.run(TestCloudDemoApplication.class, args);
 	}
 
-	@PreDestroy
+	//@PreDestroy
 	public void onExit() {
 		System.out.println("@PreDestroy  ###STOPing###");
 		try {
@@ -75,7 +72,7 @@ public class TestCloudDemoApplication {
 		  return lstThreads;
 		}
 	
-	@Bean
+	//@Bean
 	public MyFinalCorrectListener appApplicationListener(){
 		return new MyFinalCorrectListener();
 	}
