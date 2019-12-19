@@ -8,6 +8,7 @@ public abstract class ScoreEventAbstract implements EventService{
 
 	@Override
 	public void execute(Map<String, Object> map) {
+		System.out.println(" Abstract 方法  ScoreEvent  执行了！  ");
 		//1,资格判断
 		boolean b = this.validateQualification(map);
 		if (b) {

@@ -24,10 +24,10 @@ public class TransEventRuleCacheManger {
 		
 		List list = new ArrayList();
 		ZsTExecuteTaskEntity entity1 = new ZsTExecuteTaskEntity();
-		
+		entity1.setCallBeanName("tradeScoreEventServerImpl");
 		
 		ZsTExecuteTaskEntity entity2 = new ZsTExecuteTaskEntity();
-		
+		entity2.setCallBeanName("activityScoreEventServerImpl");
 		list.add(entity1);
 		list.add(entity2);
 		dto.setExecuteTasks(list);
@@ -35,3 +35,22 @@ public class TransEventRuleCacheManger {
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

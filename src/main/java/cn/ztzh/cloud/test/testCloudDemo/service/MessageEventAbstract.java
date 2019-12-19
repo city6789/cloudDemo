@@ -9,6 +9,7 @@ public abstract class MessageEventAbstract implements EventService{
 
 	@Override
 	public void execute(Map<String, Object> map) {
+		System.out.println(" Abstract 方法  MessageEvent  执行了！  ");
 		try {
 			SignleMsgPushReqDto dto = this.transDto(map);
 			this.pushMessage(dto);

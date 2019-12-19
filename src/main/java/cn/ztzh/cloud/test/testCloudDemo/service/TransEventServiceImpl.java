@@ -26,6 +26,7 @@ public class TransEventServiceImpl implements TransEventService {
 
 	@Override
 	public void runTrans(Map<String, Object> map) {
+		System.out.println("TransEventServiceImpl  执行了...");
 		TransEventRuleDto dto = manger.getTansEventRule((String) map.get("eventType"));
 		if (!ObjectUtils.isEmpty(dto)) {
 			List<ZsTExecuteTaskEntity> list = dto.getExecuteTasks();
