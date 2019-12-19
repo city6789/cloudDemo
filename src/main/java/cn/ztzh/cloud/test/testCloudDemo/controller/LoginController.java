@@ -68,6 +68,7 @@ public class LoginController {
 	  Map map = new HashMap();
 	  map.put("enentType", "firstActivate");
 	  transEventService.runTrans(map);
+	  //注释  authentication not supported
 	  return list; 
 	  }
 }
